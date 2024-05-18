@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>General Information</h1>
+        <form action="{{ url_for('general_info') }}" method="post">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br><br>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br><br>
+            <label for="budget_number">Budget Number:</label>
+            <input type="text" id="budget_number" name="budget_number" required><br><br>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br><br>
+            <input type="submit" value="Next">
+        </form>
+    </div>
+</body>
+</html>
