@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reimbursement Request System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Reimbursement Request System</h1>
+        <div class="options">
+            <a href="{{ url_for('start') }}" class="btn">Submit a New Request</a>
+            <a href="{{ url_for('status') }}" class="btn">Check Request Status</a>
+        </div>
+    </div>
+</body>
+</html>
