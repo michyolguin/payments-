@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Status</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Check Status</h1>
+        <form action="{{ url_for('status') }}" method="post">
+            <label for="request_id">Request ID:</label>
+            <input type="text" id="request_id" name="request_id" required><br><br>
+            <input type="submit" value="Check Status">
+        </form>
+    </div>
+</body>
+</html>
